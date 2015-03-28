@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>IEG Travel & Culture, INC.</title>	
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />	
+	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slideshow').nivoSlider({
+				directionNav: false
+			});
+		});
+	</script>
+</head>
+
+<body class="chinese">
+
+
+<div id="header">
+	<div class="container">
+			<a href="index.html" title="Logo"><img src="../images/logo.png" alt="logo"/></a>
+		<ul class="menu fr">
+			<li class="active"><a href="index.html" title="Home">首页</a></li>
+			<li><a href="about.html" title="About">公司简介</a></li>
+			<li><a href="education.html" title="Education">留学</a></li>
+			<li><a href="study-tour.html" title="Study Tour">游学</a></li>
+			<li><a href="contact-us.html" title="Contact Us">链接我们</a></li>
+            <li><p><select onchange="javascript:location.href = this.value;">
+                    <option value="">中文</option>
+                    <option value="../en/index.html">English</option>
+               	</select></p></li>
+		</ul>
+	</div>
+</div><!-- // end #header -->
+
+<div id="main">
+	<div class="container">
+		<div id="slideshow">
+			<img src="../images/slideshow/slideshow-1.jpg" alt="Slideshow Image" />
+			<img src="../images/slideshow/slideshow-2.jpg" alt="Slideshow Image" />
+			<img src="../images/slideshow/slideshow-3.jpg" alt="Slideshow Image" />
+		</div><!-- // end #slideshow -->
+		<div class="intro">
+			<p>用我们的专业经验&nbsp;&nbsp;&nbsp;</p>
+			<p>&nbsp;&nbsp;&nbsp;助您进入理想学院</p>
+		</div><!-- // end .intro -->
+		<div id="about" class="clearfix">
+            <div class="column">
+				<div class="image"><img src="../images/article/article-thumb-2.png" alt="Cat Image"/></div>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.  </p>
+			</div>
+			<div class="column.last">
+				<div class="image"><a href="contact-us.html"><img src="../images/article/article-thumb-1.png" alt="Contact Us"/></a></div>
+				<p><strong>地址</strong>: 99 Waltham Street, Lexington, MA 02421</p>
+                <p><strong>电话</strong>: 617-292-0011</p>
+                <p><strong>电子邮件</strong>: info@iegtravelculture.com</p>
+                <p><strong>或点击<a href="contact-us.html">这里</a>联系我们</strong></p>
+			</div>		
+
+		</div><!-- // end #articles -->
+	</div>
+</div><!-- // end #main -->
+
+<div id="footer">
+	<div class="container">
+		<p>Created by Frank Wan. Last Modified: <script>document.write(document.lastModified);</script></p>
+	</div>
+</div><!-- // end #footer -->
+	
+	
+</body>
+</html>

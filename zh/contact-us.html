@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Project Description" />
+    <meta name="keywords" content="Project Keywords" />
+    <title>IEG Travel & Culture, INC.</title>	
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />	
+	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slideshow').nivoSlider({
+				directionNav: false
+			});
+		});
+	</script>
+</head>
+
+<body class="chinese">
+
+
+<div id="header">
+	<div class="container">
+			<a href="index.html" title="Logo"><img src="../images/logo.png" alt="logo"/></a>
+		<ul class="menu fr">
+			<li><a href="index.html" title="Home">首页</a></li>
+			<li><a href="about.html" title="About">公司简介</a></li>
+			<li><a href="education.html" title="Education">留学</a></li>
+			<li><a href="study-tour.html" title="Study Tour">游学</a></li>
+			<li class="active"><a href="contact-us.html" title="Contact Us">链接我们</a></li>
+            <li><p><select onchange="javascript:location.href = this.value;">
+                    <option value="">中文</option>
+                    <option value="../en/contact-us.html">English</option>
+               	</select></p></li>
+		</ul>
+	</div>
+</div><!-- // end #header -->
+
+<div id="main">
+	<div class="container">
+		<div id="content-full" class="content">
+			<h1>Contact Us</h1>
+			<div id="contact-form">
+				<fieldset>
+					<p><label>姓名:</label><input type="text" name="" value="" class="input-txt" /></p>
+					<p><label>电子邮件:</label><input type="text" name="" value="" class="input-txt" /></p>
+					<p><label>留言:</label><textarea name="" rows="10" cols="45" class="textarea"></textarea></p>
+					<p><input type="submit" name="" value="Submit" class="input-btn" /></p>
+				</fieldset>	
+   			</div>
+			<div id="contact-map">
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.hk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=99+Waltham+Street+Lexington,+MA+02421&amp;aq=&amp;sll=31.58146,120.312653&amp;sspn=0.393087,0.727158&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Waltham+St,+Lexington,+Massachusetts+02421,+United+States&amp;t=m&amp;z=14&amp;ll=42.446008,-71.228848&amp;output=embed"></iframe><br/>
+                <a href="https://maps.google.com.hk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=99+Waltham+Street+Lexington,+MA+02421&amp;aq=&amp;sll=31.58146,120.312653&amp;sspn=0.393087,0.727158&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Waltham+St,+Lexington,+Massachusetts+02421,+United+States&amp;t=m&amp;z=14&amp;ll=42.446008,-71.228848" style="color:#0000FF;text-align:left">View Larger Map</a>
+			</div>
+		</div>
+	</div><!-- // end #main -->
+</div>
+
+<div id="footer">
+	<div class="container">
+		<p>Created by Frank Wan. Last Modified: <script>document.write(document.lastModified);</script></p>
+	</div>
+</div><!-- // end #footer -->
+	
+	
+</body>
+</html>
