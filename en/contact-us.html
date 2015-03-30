@@ -8,18 +8,18 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" type="text/css" />	
 	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <link href="../images/default/default.css" rel="stylesheet"  type="text/css" />
+
+	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$(window).load(function() {
-			$('#slideshow').nivoSlider({
-				directionNav: false
-			});
-		});
+    <script type="text/javascript">
+	$(window).load(function() {
+        $('#slider').nivoSlider();
+    });
 	</script>
 </head>
-
+    
 <body class="english">
 
 <div id="header">
@@ -58,17 +58,31 @@
 	<div class="container">
 		<div id="content-full" class="content">
 			<h1>Contact Us</h1>
-			<div id="contact-form">
-				<fieldset>
-					<p><label>Name:</label><input type="text" name="" value="" class="input-txt" /></p>
-					<p><label>Email:</label><input type="text" name="" value="" class="input-txt" /></p>
-					<p><label>Message:</label><textarea name="" rows="10" cols="45" class="textarea"></textarea></p>
-					<p><input type="submit" name="" value="Submit" class="input-btn" /></p>
-				</fieldset>	
-   			</div>
-			<div id="contact-map">
+			<div id="contact-form" class="clearfix">
+                
+                <h2>Please provide as much information as possible for us to help you with your enquiry</h2>
+                <form method="post" action="../process.php">
+                    <label for="name">Name: <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" value="" required="required" autofocus="autofocus" />
+
+                    <label for="email">Email Address: <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" value="" required="required" />
+
+                    <label for="telephone">Telephone: </label>
+                    <input type="tel" id="telephone" name="telephone" value="" />
+
+                    <label for="message">Message: <span class="required">*</span></label>
+                    <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength=20></textarea>
+
+                 
+                    <input type="submit" value="Submit" id="submit-button" />
+                    <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+                </form>
+            </div>
+			
+            <div id="contact-map"><!-- Google Maps -->
 				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.hk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=99+Waltham+Street+Lexington,+MA+02421&amp;aq=&amp;sll=31.58146,120.312653&amp;sspn=0.393087,0.727158&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Waltham+St,+Lexington,+Massachusetts+02421,+United+States&amp;t=m&amp;z=14&amp;ll=42.446008,-71.228848&amp;output=embed"></iframe><br/>
-                <a href="https://maps.google.com.hk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=99+Waltham+Street+Lexington,+MA+02421&amp;aq=&amp;sll=31.58146,120.312653&amp;sspn=0.393087,0.727158&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Waltham+St,+Lexington,+Massachusetts+02421,+United+States&amp;t=m&amp;z=14&amp;ll=42.446008,-71.228848" style="color:#0000FF;text-align:left">View Larger Map</a>
+                <a href="https://maps.google.com.hk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=99+Waltham+Street+Lexington,+MA+02421&amp;aq=&amp;sll=31.58146,120.312653&amp;sspn=0.393087,0.727158&amp;brcurrent=3,0x0:0x0,0&amp;ie=UTF8&amp;hq=&amp;hnear=99+Waltham+St,+Lexington,+Massachusetts+02421,+United+States&amp;t=m&amp;z=14&amp;ll=42.446008,-71.228848" style="color:#0000FF;text-align:left">View Larger Map (Opens a New Page)</a>
 			</div>
 		</div>
 	</div><!-- // end #main -->
