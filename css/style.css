@@ -57,7 +57,8 @@ a:hover { text-decoration: underline; }
 	height: 50px;
 }
 
-.chinese .navbar-default li a {font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
+.chinese .navbar-default li a {font-weight: bold;font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
+.chinese .navbar-default li a select {font-size: 14px;}
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
 
 /*** Main ***/

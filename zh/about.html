@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ZH" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Project Description" />
@@ -8,15 +8,15 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" type="text/css" />	
 	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <link href="../images/default/default.css" rel="stylesheet"  type="text/css" />
+
+	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$(window).load(function() {
-			$('#slideshow').nivoSlider({
-				directionNav: false
-			});
-		});
+    <script type="text/javascript">
+	$(window).load(function() {
+        $('#slider').nivoSlider();
+    });
 	</script>
 </head>
 
@@ -46,7 +46,7 @@
                 <li><a href="contact-us.html" title="Contact Us">链接我们</a></li>
                 <li><a> <select onchange="javascript:location.href = this.value;">
                 	<option value="">中文</option>
-                    <option value="../en/index.html">English</option>
+                    <option value="../en/about.html">English</option>
                 </select></a></li>            
         	</ul>
         </div>
