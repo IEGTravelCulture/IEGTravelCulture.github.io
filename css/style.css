@@ -60,16 +60,14 @@ a:hover { text-decoration: underline; }
 .chinese .navbar-default li a {font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
 
-/*** Header ***/
-
 /*** Main ***/
-#main { padding: 25px 0px 40px; }
+#main { padding: 0px 0px 40px; }
 
 /*** Slideshow ***/
-#slideshow { background: #cccccc; height: 380px!important; margin: 0px 10px 50px; position: relative; width: 940px; -moz-box-shadow: 0 0 5px #888; -webkit-box-shadow: 0 0 5px#888; box-shadow: 0 0 5px #888; }
-#slideshow .nivo-controlNav { bottom: -40px; left: 50%; margin-left: -30px; position: absolute;  }
-#slideshow .nivo-controlNav .nivo-control { background: url(../images/bullets.png) no-repeat; display: block; float: left; height: 20px; text-indent: -9999px; width: 22px; }
-#slideshow .nivo-controlNav .nivo-control.active { background: url(../images/bullets.png) no-repeat scroll 0 -22px; }
+.slider-wrapper { 
+	width: 80%; 
+	margin: 20px auto 0px auto ;
+}
 
 
 .intro { margin: 0px 10px 50px; }
