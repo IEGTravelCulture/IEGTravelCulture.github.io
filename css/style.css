@@ -37,13 +37,29 @@ a:hover { text-decoration: underline; }
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
   background-color: #666;
-  height: 50px;
 }
+
+ .navbar-default .navbar-nav > li > a:hover{
+  color: #ffffff;
+  background-color: #666;
+}
+
 
 .navbar-brand {
   float: left;
   height: 50px;
   padding: 0px 0px;
+}
+
+.dropdown-menu 
+{
+    margin-right: 0px;
+}
+.dropdown-menu .list-inline
+{
+    text-align: right;
+    padding-left: 0px;
+    width: 700px;
 }
 
 .navbar-collapse
@@ -57,6 +73,22 @@ a:hover { text-decoration: underline; }
 	height: 50px;
 }
 
+ul#topnav span
+{
+    text-align: right;
+    float: left;
+    padding: 10px;
+    right: 0px;
+    position:fixed;
+    display: none;
+    width: 100%;
+    background: #666;
+    color: #fff;
+}
+ul#topnav li:hover span { display: block; }
+ul#topnav .active span {display: block;}
+ul#topnav  li span a {color: #fff; display: inline; margin-left: 10px; margin-right: 10px;}
+ul#topnav li span a:hover {color: #fff; text-decoration: underline;}
 .chinese .navbar-default li a {font-weight: bold;font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
 .chinese .navbar-default li a select {font-size: 14px;}
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
@@ -98,6 +130,7 @@ a:hover { text-decoration: underline; }
 .content .image { border: 5px solid #ffffff; }
 .content .image.fl { margin: 0px 20px 15px 0px; }
 .content .image.fr { margin: 0px 0px 15px 20px; }
+.centered {align-content: center; text-align: center}
 
 #content { float: left; width: 660px; }
 #sidebar { float: right; width: 200px; }
@@ -193,3 +226,4 @@ input.placeholder-text, textarea.placeholder-text  {
 }
 
 #contact-map { float: left; width: 300px; }
+

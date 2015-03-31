@@ -5,10 +5,10 @@
     <meta name="description" content="Project Description" />
     <meta name="keywords" content="Project Keywords" />
     <title>IEG Travel & Culture, INC.</title>	
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" type="text/css" />	
 	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
     <link href="../images/default/default.css" rel="stylesheet"  type="text/css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
 	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
@@ -19,3 +19,68 @@
     });
 	</script>
 </head>
+
+<body class="english">
+<div id="header">
+	<div class="navbar navbar-default navbar-static-top">
+    	<div class = "navbar-header">
+            <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="logo"/></a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+        </div>
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+            <ul class = "nav navbar-nav navbar-right" id="topnav">
+				<li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li class = "active"><a href="education.html" title="Education">Education</a>
+                	<span>
+                        <a href = "application-process.html">Application Process</a>|
+                        <a href = "application-timeline.html">Application Timeline</a>|
+                        <a href = "junior-high.html">Junior High School</a>|
+                        <a href = "homes.html">Living Homes</a>
+                    </span>
+                </li>
+                <li><a href="study-tour.html" title="Study Tour">Study Tour</a>
+                    <span>
+                        <a href = "family-travel.html">Family Travel</a>|
+                        <a href = "school-visits.html">School Visits</a>
+                    </span>
+                </li>
+                <li><a href="immigration.html" title="Immigration">Immigration</a></li>
+                <li><a href="increasing-value.html" title="Increasing Value">Increasing Value</a></li>
+                <li><a href="summer-camp.html" title="Summer Camp">Summer Camp</a></li>
+                <li><a href="travel.html" title="Travel">Travel</a></li>
+                <li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
+                
+                <li><a> <select onchange="javascript:location.href = this.value;">
+                	<option value="">English</option>
+                    <option value="../zh/about.html">中文</option>
+                </select></a></li>            
+        	</ul>
+        </div>
+	</div>
+</div><!-- // end #header -->
+
+<div id="main">
+	<div class="container">
+		<div class="content">
+            <div class="centered">
+			     <h1>Application Process</h1>
+                <img src="../images/process.png">
+            </div>
+        </div>
+	</div>
+</div><!-- // end #main -->
+
+<div id="footer">
+	<div class="container">
+		<p>Created by Frank Wan. Last Modified: <script>document.write(document.lastModified);</script></p>
+	</div>
+</div><!-- // end #footer -->
+	
+	
+</body>
+</html>
