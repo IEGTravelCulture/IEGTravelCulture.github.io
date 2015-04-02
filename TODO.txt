@@ -1,0 +1,4 @@
+- Subnav bar is covering h1
+- Language tab in navbar is funky
+- Subnav active class not underlining
+- Centered class for images not working
