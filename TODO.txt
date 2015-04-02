@@ -2,3 +2,5 @@
 - Language tab in navbar is funky
 - Subnav active class not underlining
 - Centered class for images not working
+- 1.5 or double spacing for line breaks <br>
+- Slideshow dont move rest of content text (see summer-camp.html)

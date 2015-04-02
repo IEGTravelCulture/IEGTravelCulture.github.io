@@ -26,10 +26,10 @@ p { margin: 0 0 15px 0; }
 a { color: #70a3b4; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+
 .container { margin: 0px auto; width: 960px; }
 
 /*** Navbar ***/
-
 
 
 .navbar-default .navbar-nav > .active > a,
@@ -44,22 +44,16 @@ a:hover { text-decoration: underline; }
   background-color: #666;
 }
 
+.navbar-default .navbar-nav > li > a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 15px 15px;
 
+}
 .navbar-brand {
-  float: left;
   height: 50px;
   padding: 0px 0px;
-}
-
-.dropdown-menu 
-{
-    margin-right: 0px;
-}
-.dropdown-menu .list-inline
-{
-    text-align: right;
-    padding-left: 0px;
-    width: 700px;
 }
 
 .navbar-collapse
@@ -79,7 +73,7 @@ ul#topnav span
     float: left;
     padding: 10px;
     right: 0px;
-    position:fixed;
+    position:absolute;
     display: none;
     width: 100%;
     background: #666;
@@ -87,8 +81,8 @@ ul#topnav span
 }
 ul#topnav li:hover span { display: block; }
 ul#topnav .active span {display: block;}
-ul#topnav  li span a {color: #fff; display: inline; margin-left: 10px; margin-right: 10px;}
-ul#topnav li span a:hover {color: #fff; text-decoration: underline;}
+ul#topnav li span a {color: #fff; display: inline; margin-left: 10px; margin-right: 10px;}
+ul#topnav li span a:hover, ul#topnav > li > span > .active > a {color: #fff; text-decoration: underline;}
 .chinese .navbar-default li a {font-weight: bold;font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
 .chinese .navbar-default li a select {font-size: 14px;}
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
@@ -125,7 +119,7 @@ ul#topnav li span a:hover {color: #fff; text-decoration: underline;}
 .content h3 { font-family: Georgia, Serif; font-size: 16px; }
 .content ul { line-height: 22px; list-style: disc; margin-bottom: 15px; padding-left: 45px; }
 .content ol { line-height: 22px; list-style: decimal; margin-bottom: 15px; padding-left: 45px; }
-.chinese .content p {font-size:20px;}
+.chinese .content p, .chinese .content li {font-size:20px;}
 .content p { line-height: 22px; margin: 0 0 15px 0; }
 .content .image { border: 5px solid #ffffff; }
 .content .image.fl { margin: 0px 20px 15px 0px; }
