@@ -215,7 +215,7 @@ body.slide-active {
 	    width: 100%
 	}
 }
-@media (min-width:768px) { 
+@media (min-width:1300px) { 
 	#page-content {
 	    left: 0!important
 	}
