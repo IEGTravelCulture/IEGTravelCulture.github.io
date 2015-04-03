@@ -87,6 +87,10 @@ ul#topnav li span a:hover, ul#topnav > li > span > .active > a {color: #fff; tex
 .chinese .navbar-default li a select {font-size: 14px;}
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
 /*** Mobile Navbar ***/
+#mobile-header
+{
+    display: none;
+}
 
 /* adjust body when menu is open */
 body.slide-active {
@@ -225,41 +229,21 @@ body.slide-active {
 
 
 
-/*** iPhone ***/
+/*** Responsive ***/
 
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 320px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-      
-          #header
-    {
-        display: none;
-    }
-    
-
-      
-}
-
-@media only screen /*iPhone 6 Plus*/
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
-{
-    
-}
-
-@media only screen /*iPhone 5/5S/5C*/
-and (min-device-width : 320px)
-and (max-device-width : 568px)
+@media only screen
+and (max-width : 1300px)
 {
     #header
     {
-        display: none;
+        visibility: hidden;
     }
-    
-    
+    #mobile-header
+    {
+        display: inline;
+    }
 }
+
 
 /*** Main ***/
 #main { padding: 0px 0px 40px; }
