@@ -87,6 +87,25 @@ ul#topnav li span a:hover, ul#topnav > li > span > .active > a {color: #fff; tex
 .chinese .navbar-default li a select {font-size: 14px;}
 .english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
 
+/*** iPhone ***/
+
+@media only screen /*iPhone 6 Plus*/
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+{
+    
+}
+
+@media only screen /*iPhone 5/5S/5C*/
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+{
+    .navbar .navbar-default .navbar-static-top
+    {
+        display: none;
+    }
+}
+
 /*** Main ***/
 #main { padding: 0px 0px 40px; }
 
@@ -120,6 +139,7 @@ ul#topnav li span a:hover, ul#topnav > li > span > .active > a {color: #fff; tex
 .content ul { line-height: 22px; list-style: disc; margin-bottom: 15px; padding-left: 45px; }
 .content ol { line-height: 22px; list-style: decimal; margin-bottom: 15px; padding-left: 45px; }
 .chinese .content p, .chinese .content li {font-size:20px;}
+.content {padding-top: 35px;}
 .content p { line-height: 22px; margin: 0 0 15px 0; }
 .content .image { border: 5px solid #ffffff; }
 .content .image.fl { margin: 0px 20px 15px 0px; }
