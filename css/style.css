@@ -100,7 +100,7 @@ and (max-device-width : 736px)
 and (min-device-width : 320px)
 and (max-device-width : 568px)
 {
-    .navbar .navbar-default .navbar-static-top
+    #header
     {
         display: none;
     }
