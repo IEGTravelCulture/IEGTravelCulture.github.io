@@ -1,118 +1,293 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
-ol,ul { list-style: none; }
-blockquote,q { quotes: none; }
-blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none; }
-:focus { outline: 0; }
-img { vertical-align: bottom; }
-ins { text-decoration: none; }
-del { text-decoration: line-through; }
-table { border-collapse: collapse; border-spacing: 0; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 /*** Clearfix ***/
-.clearfix:after { visibility: hidden; display: block; font-size: 0; content: "."; clear: both; height: 0; }
-.clear { clear: both; }
 
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
 /*** Positioning and Alignment ***/
-.fl { float: left; }
-.fr { float: right; }
-.txt-left { text-align: left; }
-.txt-right { text-align: right; }
-.txt-center { text-align: center; }
 
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
 /*** General Settings ***/
-body { background: #f0f0f0; color: #5f5f5f; font-family: Arial, Helvetica,"FangSong", "仿宋", STFangSong, "华文仿宋",  sans-serif; font-size: 14px; }
-h1,h2,h3,h4,h5,h6 { font-weight: normal; margin-bottom: 15px; }
-p { margin: 0 0 15px 0; }
-a { color: #70a3b4; text-decoration: none; }
-a:hover { text-decoration: underline; }
 
+body {
+    background: #f0f0f0;
+    color: #5f5f5f;
+    font-family: Arial, Helvetica, "FangSong", "仿宋", STFangSong, "华文仿宋", sans-serif;
+    font-size: 14px;
+}
 
-.container { margin: 0px auto; width: 960px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
 
+p {
+    margin: 0 0 15px 0;
+}
+
+a {
+    color: #70a3b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0px auto;
+    width: 960px;
+}
 /*** Navbar ***/
-
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #666;
+    color: #ffffff;
+    background-color: #666;
 }
 
- .navbar-default .navbar-nav > li > a:hover{
-  color: #ffffff;
-  background-color: #666;
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ffffff;
+    background-color: #666;
 }
 
-.navbar-default .navbar-nav > li > a{
+.navbar-default .navbar-nav > li > a {
     text-decoration: none;
     position: relative;
     display: block;
     padding: 15px 15px;
-
 }
+
 .navbar-brand {
-  height: 50px;
-  padding: 0px 0px;
+    height: 50px;
+    padding: 0px 0px;
 }
 
-.navbar-collapse
-{
-	background-color: #e4e4e4;
+.navbar-collapse {
+    background-color: #e4e4e4;
 }
 
-.navbar-default
-{
-	background-color: #e4e4e4;
-	height: 50px;
+.navbar-default {
+    background-color: #e4e4e4;
+    height: 50px;
 }
 
-ul#topnav span
-{
+ul#topnav span {
     text-align: right;
     float: left;
     padding: 10px;
     right: 0px;
-    position:absolute;
+    position: absolute;
     display: none;
     width: 100%;
     background: #666;
     color: #fff;
 }
-ul#topnav li:hover span { display: block; }
-ul#topnav .active span {display: block;}
-ul#topnav li span a {color: #fff; display: inline; margin-left: 10px; margin-right: 10px;}
-ul#topnav li span a:hover, ul#topnav > li > span > .active > a {color: #fff; text-decoration: underline;}
-.chinese .navbar-default li a {font-weight: bold;font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif; font-size: 20px; }
-.chinese .navbar-default li a select {font-size: 14px;}
-.english .navbar-default li a {font-family: Georgia, Serif; font-size: 14px; }
-/*** Mobile Navbar ***/
-#mobile-header
-{
-    display: none;
+
+ul#topnav li:hover span {
+    display: block;
 }
 
+ul#topnav .active span {
+    display: block;
+}
+
+ul#topnav li span a {
+    color: #fff;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul#topnav li span a:hover,
+ul#topnav > li > span > .active > a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.chinese .navbar-default li a {
+    font-weight: bold;
+    font-family: Georgia, "FangSong", "仿宋", STFangSong, "华文仿宋", Serif;
+    font-size: 20px;
+}
+
+.chinese .navbar-default li a select {
+    font-size: 14px;
+}
+
+.english .navbar-default li a {
+    font-family: Georgia, Serif;
+    font-size: 14px;
+}
+/*** Mobile Navbar ***/
+
+#mobile-header {
+    display: none;
+}
 /* adjust body when menu is open */
+
 body.slide-active {
     overflow-x: hidden
 }
 /*first child of #page-content so it doesn't shift around*/
+
 .no-margin-top {
     margin-top: 0px!important
 }
 /*wrap the entire page content but not nav inside this div if not a fixed top, don't add any top padding */
+
 #page-content {
     position: relative;
     padding-top: 70px;
     left: 0;
 }
+
 #page-content.slide-active {
     padding-top: 0
 }
-
-
-
 /* put toggle bars on the left :: not using button */
+
 #slide-nav .navbar-toggle {
     cursor: pointer;
     position: relative;
@@ -126,257 +301,401 @@ body.slide-active {
     background: transparent;
 }
 /* icon bar prettyup - optional */
+
 #slide-nav .navbar-toggle > .icon-bar {
     width: 100%;
     display: block;
     height: 3px;
     margin: 5px 0 0 0;
 }
+
 #slide-nav .navbar-toggle.slide-active .icon-bar {
     background: orange
 }
+
 .navbar-header {
     position: relative
 }
 /* un fix the navbar when active so that all the menu items are accessible */
+
 .navbar.navbar-fixed-top.slide-active {
     position: relative
 }
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
-@media (max-width:1300px) { 
-	#slide-nav .container {
-	    margin: 0!important;
-	    padding: 0!important;
-      height:100%;
-	}
-	#slide-nav .navbar-header {
-	    margin: 0 auto;
-	    padding: 0 15px;
-	}
-	#slide-nav .navbar.slide-active {
-	    position: absolute;
-	    width: 80%;
-	    top: -1px;
-	    z-index: 1000;
-	}
-	#slide-nav #slidemenu {
-	    background: #f7f7f7;
-	    left: -100%;
-	    width: 80%;
-	    min-width: 0;
-	    position: absolute;
-	    padding-left: 0;
-	    z-index: 2;
-	    top: -8px;
-	    margin: 0;
-	}
-	#slide-nav #slidemenu .navbar-nav {
-	    min-width: 0;
-	    width: 100%;
-	    margin: 0;
-	}
-	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
-	    min-width: 0;
-	    width: 80%;
-	    white-space: normal;
-	}
-	#slide-nav {
-	    border-top: 0
-	}
-	#slide-nav.navbar-inverse #slidemenu {
-	    background: #333
-	}
-	/* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
-	#navbar-height-col {
-	    position: fixed;
-	    top: 0;
-	    height: 100%;
-      bottom:0;
-	    width: 80%;
-	    left: -80%;
-	    background: #f7f7f7;
-	}
-	#navbar-height-col.inverse {
-	    background: #333;
-	    z-index: 1;
-	    border: 0;
-	}
-	#slide-nav .navbar-form {
-	    width: 100%;
-	    margin: 8px 0;
-	    text-align: center;
-	    overflow: hidden;
-	    /*fast clearfixer*/
-	}
-	#slide-nav .navbar-form .form-control {
-	    text-align: center
-	}
-	#slide-nav .navbar-form .btn {
-	    width: 100%
-	}
-}
-@media (min-width:1300px) { 
-	#page-content {
-	    left: 0!important
-	}
-	.navbar.navbar-fixed-top.slide-active {
-	    position: fixed
-	}
-	.navbar-header {
-	    left: 0!important
-	}
+
+@media (max-width: 767px) {
+    #slide-nav .container {
+        margin: 0!important;
+        padding: 0!important;
+        height: 100%;
+    }
+    #slide-nav .navbar-header {
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #slide-nav .navbar.slide-active {
+        position: absolute;
+        width: 80%;
+        top: -1px;
+        z-index: 1000;
+    }
+    #slide-nav #slidemenu {
+        background: #f7f7f7;
+        left: -100%;
+        width: 80%;
+        min-width: 0;
+        position: absolute;
+        padding-left: 0;
+        z-index: 2;
+        top: -8px;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav {
+        min-width: 0;
+        width: 100%;
+        margin: 0;
+    }
+    #slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
+        min-width: 0;
+        width: 80%;
+        white-space: normal;
+    }
+    #slide-nav {
+        border-top: 0
+    }
+    #slide-nav.navbar-inverse #slidemenu {
+        background: #333
+    }
+    /* this is behind the navigation but the navigation is not inside it so that the navigation is accessible and scrolls*/
+    
+    #navbar-height-col {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        bottom: 0;
+        width: 80%;
+        left: -80%;
+        background: #f7f7f7;
+    }
+    #navbar-height-col.inverse {
+        background: #333;
+        z-index: 1;
+        border: 0;
+    }
+    #slide-nav .navbar-form {
+        width: 100%;
+        margin: 8px 0;
+        text-align: center;
+        overflow: hidden;
+        /*fast clearfixer*/
+    }
+    #slide-nav .navbar-form .form-control {
+        text-align: center
+    }
+    #slide-nav .navbar-form .btn {
+        width: 100%
+    }
 }
 
-
-
+@media (min-width: 768px) {
+    #page-content {
+        left: 0!important
+    }
+    .navbar.navbar-fixed-top.slide-active {
+        position: fixed
+    }
+    .navbar-header {
+        left: 0!important
+    }
+}
 /*** Responsive ***/
 
-@media only screen
-and (max-width : 1300px)
-{
-    #header
-    {
+@media only screen and (max-width: 1300px) {
+    #header {
         visibility: hidden;
     }
-    #mobile-header
-    {
+    #mobile-header {
         display: inline;
     }
 }
-
-
 /*** Main ***/
-#main { padding: 0px 0px 40px; }
 
+#main {
+    padding: 0px 0px 40px;
+}
 /*** Slideshow ***/
-.slider-wrapper { 
-	width: 80%; 
-	margin: 20px auto 0px auto ;
+
+.slider-wrapper {
+    width: 80%;
+    margin: 20px auto 0px auto;
 }
 
+.intro {
+    margin: 0px 10px 50px;
+}
 
-.intro { margin: 0px 10px 50px; }
-.intro p { font-size: 28px; text-align: center; font-weight: bold; }
+.intro p {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+}
 
-#about { margin: 0px 10px; }
-#about .column { float: left; margin-right: 440px; width: 200px; }
-#about .column.last { margin-right: 0px; }
-#about .column .image { height: 120px; margin-bottom: 15px; width: 200px; -moz-box-shadow: 0 0 5px #888; -webkit-box-shadow: 0 0 5px#888; box-shadow: 0 0 5px #888; }
-#about .column h2 { color: #000000; font-family: Georgia, Serif; font-size: 16px; }
+#about {
+    margin: 0px 10px;
+}
 
+#about .column {
+    float: left;
+    margin-right: 440px;
+    width: 200px;
+}
+
+#about .column.last {
+    margin-right: 0px;
+}
+
+#about .column .image {
+    height: 120px;
+    margin-bottom: 15px;
+    width: 200px;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+#about .column h2 {
+    color: #000000;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+}
 /*** Footer ***/
-#footer { background: #e4e4e4; border-top: 1px solid #d9d9d9; height: 46px; }
-#footer p { float: right; font-size: 12px; margin: 15px 0px 0px; }
-#footer ul.menu { margin-top: 15px; }
-#footer ul.menu li { margin: 0px 25px 0px 0px; }
 
-/*** Content ***/
-.content { min-height: 700px; }
-.content h1 { font-family: Georgia, Serif; font-size: 26px; }
-.content h2 { font-family: Georgia, Serif; font-size: 20px; }
-.content h3 { font-family: Georgia, Serif; font-size: 16px; }
-.content ul { line-height: 22px; list-style: disc; margin-bottom: 15px; padding-left: 45px; }
-.content ol { line-height: 22px; list-style: decimal; margin-bottom: 15px; padding-left: 45px; }
-.chinese .content p, .chinese .content li {font-size:20px;}
-.content {padding-top: 35px;}
-.content p { line-height: 22px; margin: 0 0 15px 0; }
-.content .image { border: 5px solid #ffffff; }
-.content .image.fl { margin: 0px 20px 15px 0px; }
-.content .image.fr { margin: 0px 0px 15px 20px; }
-.centered {align-content: center; text-align: center}
-
-#content { float: left; width: 660px; }
-#sidebar { float: right; width: 200px; }
-
-/*** Widget ***/
-.widget { margin-bottom: 25px; }
-.widget h3 { border-bottom: 1px solid #ccc; font-family: Georgia,Serif; font-size: 18px; margin-bottom: 10px; padding-bottom: 10px; }
-
-.widget .search {  }
-.widget .search .input-txt { height: 14px; padding: 5px; }
-.widget .search .input-btn { cursor: pointer; height: 28px; padding: 0px; width: 40px; }
-
-
-.widget .menu { list-style: square; margin: 0px; }
-.widget .menu li { float: none; line-height: 20px; }
-
-/*** Contact ***/
-#contact-form { float: left; margin-right: 30px; width: 500px; }
-#contact-form h2 {margin-bottom:15px; font-style:italic;}
-#contact-form input, 
-#contact-form select, 
-#contact-form textarea, 
-#contact-form label {font-size:15px; margin-bottom:2px;}
-#contact-form input, 
-#contact-form select, 
-#contact-form textarea {
-    width:500px;
-    border: 1px solid #CEE1E8;
-    margin-bottom:20px;
-    padding:4px;
+#footer {
+    background: #e4e4e4;
+    border-top: 1px solid #d9d9d9;
+    height: 46px;
 }
- 
-#contact-form input:focus, 
-#contact-form select:focus, 
+
+#footer p {
+    float: right;
+    font-size: 12px;
+    margin: 15px 0px 0px;
+}
+
+#footer ul.menu {
+    margin-top: 15px;
+}
+
+#footer ul.menu li {
+    margin: 0px 25px 0px 0px;
+}
+/*** Content ***/
+
+.content {
+    min-height: 700px;
+}
+
+.content h1 {
+    font-family: Georgia, Serif;
+    font-size: 26px;
+}
+
+.content h2 {
+    font-family: Georgia, Serif;
+    font-size: 20px;
+}
+
+.content h3 {
+    font-family: Georgia, Serif;
+    font-size: 16px;
+}
+
+.content ul {
+    line-height: 22px;
+    list-style: disc;
+    margin-bottom: 15px;
+    padding-left: 45px;
+}
+
+.content ol {
+    line-height: 22px;
+    list-style: decimal;
+    margin-bottom: 15px;
+    padding-left: 45px;
+}
+
+.chinese .content p,
+.chinese .content li {
+    font-size: 20px;
+}
+
+.content {
+    padding-top: 35px;
+}
+
+.content p {
+    line-height: 22px;
+    margin: 0 0 15px 0;
+}
+
+.content .image {
+    border: 5px solid #ffffff;
+}
+
+.content .image.fl {
+    margin: 0px 20px 15px 0px;
+}
+
+.content .image.fr {
+    margin: 0px 0px 15px 20px;
+}
+
+.centered {
+    align-content: center;
+    text-align: center
+}
+
+#content {
+    float: left;
+    width: 660px;
+}
+
+#sidebar {
+    float: right;
+    width: 200px;
+}
+/*** Widget ***/
+
+.widget {
+    margin-bottom: 25px;
+}
+
+.widget h3 {
+    border-bottom: 1px solid #ccc;
+    font-family: Georgia, Serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.widget .search {}
+
+.widget .search .input-txt {
+    height: 14px;
+    padding: 5px;
+}
+
+.widget .search .input-btn {
+    cursor: pointer;
+    height: 28px;
+    padding: 0px;
+    width: 40px;
+}
+
+.widget .menu {
+    list-style: square;
+    margin: 0px;
+}
+
+.widget .menu li {
+    float: none;
+    line-height: 20px;
+}
+/*** Contact ***/
+
+#contact-form {
+    float: left;
+    margin-right: 30px;
+    width: 500px;
+}
+
+#contact-form h2 {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+    width: 500px;
+    border: 1px solid #CEE1E8;
+    margin-bottom: 20px;
+    padding: 4px;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
 #contact-form textarea:focus {
     border: 1px solid #AFCDD8;
     background-color: #EBF2F4;
 }
- 
+
 #contact-form textarea {
-    height:150px;
+    height: 150px;
     resize: none;
 }
- 
+
 #contact-form label {
-    display:block;
+    display: block;
 }
- 
+
 #contact-form .required {
-    color:#F00;    
+    color: #F00;
 }
- 
+
 #contact-form #submit-button {
     width: 100px;
-    background-color:#333;
-    color:#FFF;
-    border:none;
-    display:block;
-    float:right;
-    background-color:#8FB5C1;
-    -moz-border-radius:8px;
+    background-color: #333;
+    color: #FFF;
+    border: none;
+    display: block;
+    float: right;
+    background-color: #8FB5C1;
+    -moz-border-radius: 8px;
 }
- 
+
 #contact-form #submit-button:hover {
     background-color: #A6CFDD;
 }
- 
+
 #contact-form #submit-button:active {
-    position:relative;
-    top:1px;
+    position: relative;
+    top: 1px;
 }
- 
+
 #req-field-desc {
-    font-style:italic;
+    font-style: italic;
 }
- 
 /* chrome, safari */
+
 ::-webkit-input-placeholder {
-    color:#CCC;
-    font-style:italic;
+    color: #CCC;
+    font-style: italic;
 }
- 
 /* mozilla */
-input:-moz-placeholder, textarea:-moz-placeholder {
-    color:#CCC;
-    font-style:italic;
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #CCC;
+    font-style: italic;
 }
- 
 /* ie (faux placeholder) */
-input.placeholder-text, textarea.placeholder-text  { 
-    color:#CCC;
-    font-style:italic;
+
+input.placeholder-text,
+textarea.placeholder-text {
+    color: #CCC;
+    font-style: italic;
 }
 
-#contact-map { float: left; width: 300px; }
-
+#contact-map {
+    float: left;
+    width: 300px;
+}
