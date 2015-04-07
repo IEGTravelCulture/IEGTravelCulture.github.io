@@ -10,10 +10,11 @@
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
     <link href="../images/default/default.css" rel="stylesheet" type="text/css" />
-
+    <script type="text/javascript" src="../js/react-with-addons-0.12.2.js"></script>
     <script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
     <script type="text/javascript">
         $(window).load(function () {
             $('#slider').nivoSlider();
@@ -70,7 +71,7 @@
     </div>
     <!-- // end #header -->
     <div id="mobile-header">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-toggle">
@@ -88,15 +89,40 @@
                         </li>
                         <li><a href="about.html">公司简介</a>
                         </li>
-                        <li><a href="#contact">Contact</a>
-                        </li>
+
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">留学<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li> <a href="middle-high.html">中学</a>
                                 </li>
                                 <li> <a href="college.html">大学</a>
                                 </li>
-                                <li><a href="graduate.html">研究生</a>|
+                                <li><a href="graduate.html">研究生</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">游学<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="family-travel.html">家庭旅游</a>
+                                </li>
+                                <li><a href="school-visits.html">访问学校</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="immigration.html">移民安家</a>
+                        </li>
+                        <li><a href="increasing-value.html">增值服务</a>
+                        </li>
+                        <li><a href="summer-camp.html">夏令营</a>
+                        </li>
+                        <li><a href="travel.html">旅游</a>
+                        </li>
+                        <li><a href="contact-us.html">链接我们</a>
+                        </li>
+                        <li><a href="" class="dropdown-toggle" data-toggle="dropdown">语言<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../en/index.html">English</a>
+                                </li>
+                                <li><a href="">中文</a>
                                 </li>
                             </ul>
                         </li>
@@ -107,7 +133,7 @@
     </div>
     <!-- // end #mobile-header -->
 
-    <div id="main">
+    <div id="page-content">
         <div class="container">
             <div class="big-pic">
                 <img src="../images/big_pic.png">

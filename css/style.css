@@ -146,6 +146,7 @@ table {
 
 body {
     /*background: #f0f0f0;*/
+    
     background-image: url("../images/bg.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -183,19 +184,19 @@ a:hover {
 }
 /*** Navbar ***/
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+#header .navbar-default .navbar-nav > .active > a,
+#header .navbar-default .navbar-nav > .active > a:hover,
+#header .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: #666;
 }
 
-.navbar-default .navbar-nav > li > a:hover {
+#header .navbar-default .navbar-nav > li > a:hover {
     color: #ffffff;
     background-color: #666;
 }
 
-.navbar-default .navbar-nav > li > a {
+#header .navbar-default .navbar-nav > li > a {
     text-decoration: none;
     position: relative;
     display: block;
@@ -204,20 +205,20 @@ a:hover {
 
 .navbar-brand {
     height: 50px;
-    padding: 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
-.navbar-collapse {
+#header .navbar-collapse {
     background-color: #e4e4e4;
 }
 
-.navbar-default {
+#header .navbar-default {
     border-bottom: 0px;
     background-color: #FFFFFF;
     height: 50px;
 }
 
-ul#topnav span {
+#header ul#topnav span {
     text-align: right;
     float: left;
     padding: 10px;
@@ -229,23 +230,23 @@ ul#topnav span {
     color: #fff;
 }
 
-ul#topnav li:hover span {
+#header ul#topnav li:hover span {
     display: block;
 }
 
-ul#topnav .active span {
+#header ul#topnav .active span {
     display: block;
 }
 
-ul#topnav li span a {
+#header ul#topnav li span a {
     color: #fff;
     display: inline;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-ul#topnav li span a:hover,
-ul#topnav > li > span > .active > a {
+#header ul#topnav li span a:hover,
+#header ul#topnav > li > span > .active > a {
     color: #fff;
     text-decoration: underline;
 }
@@ -260,7 +261,7 @@ ul#topnav > li > span > .active > a {
     font-size: 14px;
 }
 
-.english .navbar-default li a {
+.english #header .navbar-default li a {
     font-family: Georgia, Serif;
     font-size: 14px;
 }
@@ -268,6 +269,10 @@ ul#topnav > li > span > .active > a {
 
 #mobile-header {
     display: none;
+}
+
+#mobile-header .container {
+    display: inline;
 }
 /* adjust body when menu is open */
 
@@ -288,7 +293,7 @@ body.slide-active {
 }
 
 #page-content.slide-active {
-    padding-top: 0
+    padding-top: 0;
 }
 /* put toggle bars on the left :: not using button */
 
@@ -416,7 +421,7 @@ body.slide-active {
 
 @media only screen and (max-width: 1300px) {
     #header {
-        visibility: hidden;
+        display:none;
     }
     #mobile-header {
         display: inline;
@@ -424,7 +429,7 @@ body.slide-active {
 }
 /*** Main ***/
 
-#main {
+#page-content {
     padding: 35px 0px 40px;
 }
 /*** Slideshow ***/
@@ -532,7 +537,6 @@ body.slide-active {
 .chinese .content li {
     font-size: 20px;
 }
-
 
 .content p {
     line-height: 22px;
