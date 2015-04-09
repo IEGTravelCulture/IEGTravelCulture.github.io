@@ -52,7 +52,7 @@ $(document).ready(function () {
 
     $(window).on("resize", function () {
 
-        if ($(window).width() > 767 && $('.navbar-toggle').is(':hidden')) {
+        if ($(window).width() > 1299 && $('.navbar-toggle').is(':hidden')) {
             $(selected).removeClass('slide-active');
         }
 
