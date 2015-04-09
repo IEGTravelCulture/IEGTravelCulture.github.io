@@ -148,7 +148,6 @@ body {
     /*background: #f0f0f0;*/
     
     background-image: url("../images/bg.jpg");
-    background-position: center;
     background-attachment: fixed;
     color: #5f5f5f;
     font-family: Arial, Helvetica, "FangSong", "仿宋", STFangSong, "华文仿宋", sans-serif;
@@ -216,6 +215,8 @@ a:hover {
     border-bottom: 0px;
     background-color: #FFFFFF;
     height: 50px;
+	padding-right: 15px;
+	
 }
 
 #header ul#topnav span {
@@ -419,7 +420,7 @@ body.slide-active {
 }
 /*** Responsive ***/
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 767px) {
     #header {
         display:none;
     }
@@ -484,11 +485,14 @@ body.slide-active {
     height: 46px;
 }
 
-#footer p {
+#footer .footer-right {
     color: black;
     float: right;
     font-size: 12px;
     margin: 15px 0px 0px;
+}
+
+#footer .footer-left{
 }
 
 #footer ul.menu {
