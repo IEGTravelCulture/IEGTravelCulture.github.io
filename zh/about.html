@@ -1,38 +1,39 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ZH" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Project Description" />
     <meta name="keywords" content="Project Keywords" />
-    <title>IEG Travel & Culture, INC.</title>	
+    <title>IEG Travel & Culture, INC.</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />	
-	<link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
-    <link href="../images/default/default.css" rel="stylesheet"  type="text/css" />
-
-	<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
-	<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/nivo-slider.css" rel="stylesheet" type="text/css" />
+    <link href="../images/default/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/react-with-addons-0.12.2.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
     <script type="text/javascript">
-	$(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-	</script>
+        $(window).load(function () {
+            $('#slider').nivoSlider();
+        });
+    </script>
 </head>
 
 <body class="chinese">
-
-<div id="header">
-	<div id="header">
+    <meta name="viewport" content="initial-scale=0.65, user-scalable=yes">
+    <div id="header">
         <div class="navbar navbar-default navbar-static-top">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="logo" />
                 </a>
             </div>
             <ul class="navbar-nav navbar-right" id="topnav">
-                <li class="active"><a href="index.html">首页</a>
+                <li><a href="index.html">首页</a>
                 </li>
-                <li><a href="about.html">公司简介</a>
+                <li class="active"><a href="about.html">公司简介</a>
                 </li>
                 <li><a href="middle-high.html">留学</a>
                     <span>
@@ -69,7 +70,7 @@
     </div>
     <!-- // end #header -->
     <div id="mobile-header">
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="slide-nav">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="slide-nav">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-toggle">
@@ -87,8 +88,7 @@
                         </li>
                         <li class="active"><a href="about.html">公司简介</a>
                         </li>
-                        <li><a href="#contact">Contact</a>
-                        </li>
+
                         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">留学<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li> <a href="middle-high.html">中学</a>

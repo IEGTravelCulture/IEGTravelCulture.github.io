@@ -271,6 +271,10 @@ a:hover {
     display: none;
 }
 
+#slide-nav {
+    margin-bottom: 50px;
+}
+
 #mobile-header .container {
     display: inline;
 }
@@ -328,7 +332,7 @@ body.slide-active {
 /* un fix the navbar when active so that all the menu items are accessible */
 
 .navbar.navbar-fixed-top.slide-active {
-    position: relative
+    position: fixed;
 }
 /* screw writing importants and shit, just stick it in max width since these classes are not shared between sizes */
 
@@ -343,7 +347,7 @@ body.slide-active {
         padding: 0 15px;
     }
     #slide-nav .navbar.slide-active {
-        position: absolute;
+        position: fixed;
         width: 80%;
         top: -1px;
         z-index: 1000;
@@ -353,7 +357,7 @@ body.slide-active {
         left: -100%;
         width: 80%;
         min-width: 0;
-        position: absolute;
+        position: fixed;
         padding-left: 0;
         z-index: 2;
         top: -8px;
@@ -421,7 +425,7 @@ body.slide-active {
 
 @media only screen and (max-width: 1299px) {
     #header {
-        display:none;
+        visibility: hidden;
     }
     #mobile-header {
         display: inline;
